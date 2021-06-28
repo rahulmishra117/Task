@@ -1,0 +1,22 @@
+.Jumbo-style{
+    background-color: #F6F6F2;
+
+}
+
+.jumbo-child{
+    display: flex;
+}
+.jumbo-child-img{
+    height: 500px;
+    width: 500px;
+    margin-left: 30%;
+}
+.task-form{
+    border-style: none;
+    background: #ffffff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+.btton{
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
