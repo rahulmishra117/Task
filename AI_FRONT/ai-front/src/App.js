@@ -7,6 +7,7 @@ import Footer from './component/Footer';
 function App() {
   return (
     <div className="App">
+    {/* Access the component form the different status. */}
       <Topview/>
      
       <Home/>

@@ -58,7 +58,7 @@ function Menu () {
     
   };
   const clerwindow = ()=> {
-    setTasks("");
+    alert("Total count 5");
     return ;
   }
 

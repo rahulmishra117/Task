@@ -13,7 +13,7 @@ function Home() {
               Just Add ,Update,and Count the Task in the React App.
             </p>
             <p>
-              <Button variant="primary">CLICK</Button>
+              
             </p>
           </div>
           <div className="jumbo-right-child">

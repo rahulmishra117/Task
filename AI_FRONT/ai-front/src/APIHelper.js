@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// ApI fomr Backend.
 const API_URL="http://localhost:5000/tasks/"
 async function createTask(task) {
   const { data: newTask } = await axios.post(API_URL, {
@@ -18,6 +19,7 @@ async function updateTask(id, payload) {
   return newTask;
 }
 
+// Getting all the Task 
 async function getAllTasks() {
   const { data: tasks } = await axios.get(API_URL);
   return tasks;
