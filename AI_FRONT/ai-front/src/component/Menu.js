@@ -15,7 +15,7 @@ import {
 } from "react-bootstrap";
 
 function Menu () {
-  
+  // Set the state for the app 
   const [tasks, setTasks] = useState([]);
   const [task, setTask] = useState("");
 
@@ -27,6 +27,7 @@ function Menu () {
     fetchTaskAndSetTasks();
   }, []);
 
+  // Create the task that are added
   const createTask = async e => {
     e.preventDefault();
     if (!task) {
@@ -42,6 +43,7 @@ function Menu () {
     setTasks([...tasks, newTask]);
   };
 
+  // Just delete the task
   const deleteTask = async (e, id) => {
     try {
       e.stopPropagation();
@@ -50,6 +52,7 @@ function Menu () {
     } catch (err) {}
   };
 
+  // Update the task..
   const updateTask = async (e, id) => {
     e.stopPropagation();
     const payload = {completed: !tasks.find(task => task._id === id).completed}
@@ -72,6 +75,7 @@ function Menu () {
                 <Form className="task-form">
                   <Form.Group controlId="formBasicEmail">
                     <Form.Label>TASK</Form.Label>
+                    {/*Call that method in the box*/}
                     <Form.Control type="text" placeholder="Enter Task" 
                     value={task}
                     onChange={({target}) => setTask(target.value)}
@@ -104,6 +108,7 @@ function Menu () {
                     
                     <Card.Text>
                     <ul>
+                    {/* etrate the map for the task..*/}
                     {tasks.length ? tasks.map(({_id,task,completed },i)=>(
                     <li key={i} 
                     onClick={e => updateTask(e,_id)}

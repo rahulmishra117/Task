@@ -6,7 +6,9 @@
 ### React ,Node js ,MongoDB, CSS.
 
 # All DATA Form localhost:5000/tasks
-##
+
+```json
+
   [
 {
 "completed": false,
@@ -41,4 +43,4 @@
 "__v": 0
 }
 ]
-##
+```
